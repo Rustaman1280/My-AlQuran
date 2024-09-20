@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran Web</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .surah-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .surah-button {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            border-radius: 15px;
+            border: none;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.8));
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1), -2px -2px 6px rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.5;
+            color: #333;
+            padding: 10px;
+        }
+        .surah-button:hover {
+            transform: translateY(-10px);
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2), -4px -4px 12px rgba(255, 255, 255, 0.9);
+        }
+        .surah-button:nth-child(odd) {
+            background-color: #a3d5ff;
+        }
+        .surah-button:nth-child(even) {
+            background-color: #ffc1a1;
+        }
+        .surah-name-arabic {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2b2b2b;
+            direction: rtl;
+        }
+        .surah-name-latin {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Al-Quran Web</h1>
+    <div class="surah-container">
+        <!-- Loop for 144 Surahs -->
+        <button class="surah-button">
+            <div class="surah-name-arabic">الفاتحة</div>
+            <div class="surah-name-latin">Al-Fatihah</div>
+        </button>
+        <button class="surah-button">
+            <div class="surah-name-arabic">البقرة</div>
+            <div class="surah-name-latin">Al-Baqarah</div>
+        </button>
+        <button class="surah-button">
+            <div class="surah-name-arabic">آل عمران</div>
+            <div class="surah-name-latin">Ali 'Imran</div>
+        </button>
+        <!-- Tambahkan tombol surah lainnya sampai 144 -->
+    </div>
+</body>
+</html>
