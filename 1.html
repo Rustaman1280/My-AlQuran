@@ -16,37 +16,40 @@
             font-size: 36px;
             color: #2c3e50;
         }
+        .ayah-container {
+            text-align: center; /* Center text in each ayah container */
+            margin: 20px 0; /* Add margin between ayah containers */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners for the ayah container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        }
         .ayah {
             text-align: right;
-            font-size: 36px; /* Lebih besar teks Arab */
+            font-size: 36px; /* Larger Arabic text */
             direction: rtl;
-            margin: 20px 0;
             color: #000;
         }
         .ayah-number {
             font-size: 24px;
             color: #555;
-            text-align: left;
-            margin-top: -15px;
+            margin: 10px 0; /* Margin for spacing */
         }
         .translation {
             font-size: 18px;
-            margin-bottom: 40px;
             color: #555;
+            margin-top: 10px; /* Add spacing above translation */
         }
         .container {
             width: 80%;
             max-width: 800px; /* Limit maximum width */
-            background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+            margin: auto; /* Center container */
             padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+            background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
             border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
             backdrop-filter: blur(30px); /* Blur effect for glassy look */
-            text-align: center; /* Center text in container */
             border: 1px solid rgba(255, 255, 255, 0.3); /* Border with transparency */
-        }
-        .numbered-translation {
-            font-weight: bold;
         }
     </style>
 </head>
@@ -54,74 +57,88 @@
     <div class="container">
         <h1>Surah Al-Fatihah</h1>
 
-        <div class="ayah">
-            بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
-        </div>
-        <div class="ayah-number">
-            (١)
-        </div>
-        <div class="translation numbered-translation">
-            1. Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.
-        </div>
-
-        <div class="ayah">
-            اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ
-        </div>
-        <div class="ayah-number">
-            (٢)
-        </div>
-        <div class="translation numbered-translation">
-            2. Segala puji bagi Allah, Tuhan seluruh alam.
+        <div class="ayah-container">
+            <div class="ayah">
+                بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+            </div>
+            <div class="ayah-number">
+                (١)
+            </div>
+            <div class="translation">
+                1. Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.
+            </div>
         </div>
 
-        <div class="ayah">
-            الرَّحْمٰنِ الرَّحِيْمِ
-        </div>
-        <div class="ayah-number">
-            (٣)
-        </div>
-        <div class="translation numbered-translation">
-            3. Yang Maha Pengasih, Maha Penyayang.
-        </div>
-
-        <div class="ayah">
-            مٰلِكِ يَوْمِ الدِّيْنِ
-        </div>
-        <div class="ayah-number">
-            (٤)
-        </div>
-        <div class="translation numbered-translation">
-            4. Pemilik hari pembalasan.
+        <div class="ayah-container">
+            <div class="ayah">
+                اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ
+            </div>
+            <div class="ayah-number">
+                (٢)
+            </div>
+            <div class="translation">
+                2. Segala puji bagi Allah, Tuhan seluruh alam.
+            </div>
         </div>
 
-        <div class="ayah">
-            اِیَّاكَ نَعْبُدُ وَ اِیَّاكَ نَسْتَعِیْنُ
-        </div>
-        <div class="ayah-number">
-            (٥)
-        </div>
-        <div class="translation numbered-translation">
-            5. Hanya kepada-Mu kami menyembah dan hanya kepada-Mu kami memohon pertolongan.
-        </div>
-
-        <div class="ayah">
-            اِهْدِنَا الصِّرَاطَ الْمُسْتَقِیْمَ
-        </div>
-        <div class="ayah-number">
-            (٦)
-        </div>
-        <div class="translation numbered-translation">
-            6. Tunjukilah kami jalan yang lurus,
+        <div class="ayah-container">
+            <div class="ayah">
+                الرَّحْمٰنِ الرَّحِيْمِ
+            </div>
+            <div class="ayah-number">
+                (٣)
+            </div>
+            <div class="translation">
+                3. Yang Maha Pengasih, Maha Penyayang.
+            </div>
         </div>
 
-        <div class="ayah">
-            صِرَاطَ الَّذِیْنَ اَنْعَمْتَ عَلَیْهِمْ ۙ غَیْرِ الْمَغْضُوْبِ عَلَیْهِمْ وَ لَا الضَّآلِّیْنَ
+        <div class="ayah-container">
+            <div class="ayah">
+                مٰلِكِ يَوْمِ الدِّيْنِ
+            </div>
+            <div class="ayah-number">
+                (٤)
+            </div>
+            <div class="translation">
+                4. Pemilik hari pembalasan.
+            </div>
         </div>
-        <div class="ayah-number">
-            (٧)
+
+        <div class="ayah-container">
+            <div class="ayah">
+                اِیَّاكَ نَعْبُدُ وَ اِیَّاكَ نَسْتَعِیْنُ
+            </div>
+            <div class="ayah-number">
+                (٥)
+            </div>
+            <div class="translation">
+                5. Hanya kepada-Mu kami menyembah dan hanya kepada-Mu kami memohon pertolongan.
+            </div>
         </div>
-        <div class="translation numbered-translation">
-            7. (yaitu) jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.
+
+        <div class="ayah-container">
+            <div class="ayah">
+                اِهْدِنَا الصِّرَاطَ الْمُسْتَقِیْمَ
+            </div>
+            <div class="ayah-number">
+                (٦)
+            </div>
+            <div class="translation">
+                6. Tunjukilah kami jalan yang lurus,
+            </div>
+        </div>
+
+        <div class="ayah-container">
+            <div class="ayah">
+                صِرَاطَ الَّذِیْنَ اَنْعَمْتَ عَلَیْهِمْ ۙ غَیْرِ الْمَغْضُوْبِ عَلَیْهِمْ وَ لَا الضَّآلِّیْنَ
+            </div>
+            <div class="ayah-number">
+                (٧)
+            </div>
+            <div class="translation">
+                7. (yaitu) jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.
+            </div>
         </div>
     </div>
 </body>
